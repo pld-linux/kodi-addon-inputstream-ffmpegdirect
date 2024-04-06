@@ -5,16 +5,16 @@
 
 Summary:	Kodi InputStream ffmpegdirect addon
 Name:		kodi-addon-inputstream-ffmpegdirect
-Version:	%{kodi_ver}.2.0
+Version:	%{kodi_ver}.3.5
 Release:	1
 License:	GPL v2+
 Group:		Applications/Multimedia
 Source0:	https://github.com/xbmc/inputstream.ffmpegdirect/archive/%{version}-%{codename}/%{name}-%{version}-%{codename}.tar.gz
-# Source0-md5:	e0816edab3c25ec932cdb5b0be1ebfab
+# Source0-md5:	5eefa72bf41064c955d2251d3ccd7f91
 URL:		https://github.com/xbmc/inputstream.ffmpegdirect
 BuildRequires:	bzip2-devel
 BuildRequires:	cmake >= 3.5
-BuildRequires:	ffmpeg-devel
+BuildRequires:	ffmpeg-devel >= 5.0.0
 BuildRequires:	kodi-devel >= %{kodi_ver}
 BuildRequires:	kodi-devel < %{next_kodi_ver}
 BuildRequires:	pkgconfig
