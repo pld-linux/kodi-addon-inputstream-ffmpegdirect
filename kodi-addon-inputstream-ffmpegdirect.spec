@@ -1,16 +1,16 @@
-%define		kodi_ver	21
+%define		kodi_ver	22
 %define		next_kodi_ver	%(echo $((%{kodi_ver}+1)))
-%define		codename	Omega
+%define		codename	Piers
 %define		addon		inputstream.ffmpegdirect
 
 Summary:	Kodi InputStream ffmpegdirect addon
 Name:		kodi-addon-inputstream-ffmpegdirect
-Version:	%{kodi_ver}.3.5
-Release:	2
+Version:	%{kodi_ver}.2.5
+Release:	1
 License:	GPL v2+
 Group:		Applications/Multimedia
 Source0:	https://github.com/xbmc/inputstream.ffmpegdirect/archive/%{version}-%{codename}/%{name}-%{version}-%{codename}.tar.gz
-# Source0-md5:	5eefa72bf41064c955d2251d3ccd7f91
+# Source0-md5:	96444af875d2d148e8e9926b765b83b5
 URL:		https://github.com/xbmc/inputstream.ffmpegdirect
 BuildRequires:	bzip2-devel
 BuildRequires:	cmake >= 3.5
